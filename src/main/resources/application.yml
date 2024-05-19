@@ -27,3 +27,14 @@ spring:
 springdoc:
   swagger-ui:
     path: /swagger
+
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
