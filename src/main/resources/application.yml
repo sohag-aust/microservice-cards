@@ -80,3 +80,8 @@ info:
     name: "cards"
     description: "Cards Microservices"
     version: "1.0.0"
+
+# Logging Pattern for Distributed Tracing
+logging: # for distributed tracing [tags, traceId, spanId]
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
